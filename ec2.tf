@@ -4,17 +4,15 @@ provider "aws" {
   profile = "default"
 }
 
-/*
 # store the terraform state file in s3
 terraform {
   backend "s3" {
-     bucket = "eva-buc-terraform"
-    key = "terraform/terraform.tfstate"
+     bucket = "aos-terraform"
+    key = "aos-cicd/terraform.tfstate"
     dynamodb_table = "terraform-lock"
     region = "ca-central-1"
   }
 }
-*/
 
 # create default vpc if one does not exit
 resource "aws_default_vpc" "default_vpc" {
