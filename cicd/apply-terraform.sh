@@ -10,7 +10,6 @@ cd ..
 terraform init
 
 # # apply terraform
-<<<<<<< HEAD
 terraform apply -auto-approve
 =======
 # terraform apply -auto-approve
